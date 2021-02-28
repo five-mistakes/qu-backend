@@ -6,6 +6,7 @@ const cors = require('cors');
 const mWare = require('./utils/middlewares');
 const quRouter = require('./routes');
 const app = express();
+const path = require('path');
 
 app.use(helmet());
 // to log the api requests in console
@@ -23,6 +24,11 @@ app.use(compression());
 // disable caching
 app.disable('etag');
 
+app.use(express.static(path.join(process.cwd(), 'build')));
+
+app.get('/', function (req, res) {
+  res.sendFile(path.join(process.cwd(), 'build', 'index.html'));
+});
 app.get('/ping', (_req, res) => {
   res.send('it is up and running!');
 });
