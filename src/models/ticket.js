@@ -15,9 +15,6 @@ const TicketSchema = mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId, 
         ref: 'Service'
     },
-    user: {
-        type: String
-    },
     qrPhoto: {
         data: Buffer,
         contenType: String
@@ -31,5 +28,6 @@ TicketSchema.set('toJSON', {
       delete returnedObject.__v
     }
 });
+
 
 module.exports = mongoose.model('Ticket', TicketSchema);

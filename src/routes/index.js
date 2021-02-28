@@ -6,6 +6,7 @@ const quRouter = express.Router();
 
 quRouter.route('/facilities').get(FacilitiesRoute.getFacilities);
 quRouter.route('/services').get(ServiceRoute.getServices);
+quRouter.route('/cities').get(FacilitiesRoute.getCities);
 quRouter.route('/tickets').get(TicketRoute.getTicket);
 quRouter.route('/tickets').post(TicketRoute.addTicket);
 
