@@ -1,0 +1,34 @@
+{
+    "services": [
+        {
+            "name": "New Residence permit",
+            "description": "Apply for new permit",
+            "facility": "Migration Office"
+        },
+        {
+            "name": "New Bank Account",
+            "description": "Apply for new bank account",
+            "facility": "Fibank Branch#1"
+        },
+        {
+            "name": "New Bank Account",
+            "description": "Apply for new bank account",
+            "facility": "UniCredit Branch#3"
+        },
+        {
+            "name": "Transcript",
+            "description": "Get your Transcript",
+            "facility": "AUBG Registrar's"
+        },
+        {
+            "name": "Clearance Report",
+            "description": "Get your Police Clearance report",
+            "facility": "Police Station"
+        },
+        {
+            "name": "Dentist",
+            "description": "Dentist services",
+            "facility": "Tokuda Hospital"
+        }
+    ]
+}

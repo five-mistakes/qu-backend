@@ -21,7 +21,7 @@ const TicketSchema = mongoose.Schema({
     }
 });
 
-TicketSchema.set('toJSON', {
+TicketSchema.set('toJSONEd', {
     transform: (document, returnedObject) => {
       returnedObject.id = returnedObject._id.toString()
       delete returnedObject._id

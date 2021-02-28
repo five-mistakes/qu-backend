@@ -9,5 +9,5 @@ quRouter.route('/services').get(ServiceRoute.getServices);
 quRouter.route('/cities').get(FacilitiesRoute.getCities);
 quRouter.route('/tickets').get(TicketRoute.getTicket);
 quRouter.route('/tickets').post(TicketRoute.addTicket);
-
+quRouter.route('/tickets/email').post(TicketRoute.sendEmail);
 module.exports = quRouter;
